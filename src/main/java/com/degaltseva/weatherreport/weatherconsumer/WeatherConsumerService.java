@@ -24,7 +24,7 @@ public class WeatherConsumerService {
             weatherDataMap.get(weatherData.getCity()).add(weatherData);
         }
 
-        System.out.println("Consumed: " + weatherData.getCity());
+        System.out.println("Consumed: " + weatherData.toString());
     }
 
     public List<WeatherData> getWeatherData(String city) throws Exception {
